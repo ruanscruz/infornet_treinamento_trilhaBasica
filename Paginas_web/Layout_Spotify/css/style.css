@@ -1,0 +1,90 @@
+/* geral */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* main */
+#main-container {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* header */
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.header-container > a > svg {
+    height: 45px;
+    align-items: center;
+}
+
+.header-container > h1 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+/* oauth */
+
+.oauth-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.oauth-link {
+    margin: 0.7rem 0;
+    padding: 0.8rem;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.link-facebook {
+    border: 3px solid #405a93;
+    background-color: #405a93;
+    color: #fff;
+}
+
+.link-google {
+    border: 3px solid #666666;
+    color: #666666;
+}
+
+.oauth-link__container {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+
+}
+
+.oauth-icon {
+    height: 24px;
+    width: 24px;
+    padding-right: 0.8rem;
+}
+
+/* divider */
+#divider {
+    color: #666666;
+    margin: 1.5rem auto;
+    font-weight: bold;
+}
+
+
+

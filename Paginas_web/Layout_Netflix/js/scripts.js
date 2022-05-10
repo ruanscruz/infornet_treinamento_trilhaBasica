@@ -22,9 +22,6 @@ emailButtons.forEach(button => {
     })
 })
 
-
-
-
 // Funções auxiliares
 const validate = (button) => {
     const inputValidity = button.previousElementSibling
