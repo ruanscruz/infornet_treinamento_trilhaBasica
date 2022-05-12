@@ -54,6 +54,11 @@ body {
     font-size: 1.2rem;
 }
 
+.oauth-link:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
 
 .link-facebook {
     border: 3px solid #405a93;
@@ -86,5 +91,205 @@ body {
     font-weight: bold;
 }
 
+/* form */
 
+.error-warning {
+    height: 20px;
+    padding-top: 0.2rem;
+    margin-right: 0.3rem;
+}
+.form-inputs__errors {
+    color: #d10031;
+    font-weight: bold;
+    padding: 1rem 0;
+}
 
+.errors-hidden {
+    display: none;
+}
+
+.form-inputs__container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+.form-inputs__label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+}
+
+.form_inputs {
+    padding: 1rem 1rem;
+    border: 2px solid #878787;
+    border-radius: 5px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.form_inputs:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border: 3px solid #000;
+}
+
+#use_phone {
+    padding: 0.5rem 0;
+    color: #1b7d37;
+    font-weight: bold;
+}
+
+.msg_name_profile {
+    padding: 0.5rem 0;
+    color: #2c2c2c;
+    font-weight: bold;
+}
+
+#birthday-container {
+    display: flex;
+}
+
+.birthday-date__label {
+    color: #2c2c2c;
+    font-weight: bold;
+    font-size: 1rem;
+}
+#month_label {
+    margin: 0 1.8rem;
+}
+
+#month {
+    height: 66px;
+    padding: 1rem 1rem;
+    border: 2px solid #878787;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #878787;
+    margin: 0 1.8rem;
+}
+
+.gender_inputs {
+    height: 20px;
+    width: 20px;
+
+    border: 2px solid #878787;
+
+}
+
+.gender_inputs:checked {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-color: #1b7d37;
+}
+
+.gender-label {
+    font-weight: bold;
+    vertical-align: center;
+    padding: 1rem 1.3rem 1rem 0.6rem;
+}
+
+/* subscribe */
+
+#subscribe__container {
+    padding: 1rem 1rem 1rem 0;
+}
+.input-subscribe__container {
+    display: flex;
+    align-items: center;
+}
+
+.form-subscribe__input {
+    height: 20px;
+    width: 20px;
+    border: 2px solid #878787;
+    margin-right: 1rem;
+}
+
+.form-subscribe__label {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+
+#sub_share {
+    position: relative;
+}
+.detail {
+    color: #32bf59;
+}
+
+/* captcha */
+
+#captcha__container {
+    display: flex;
+    background-color: #f9f9f9;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 2px solid #d3d3d3;
+}
+
+#captcha_info {
+    display: flex;
+    align-items: center;
+}
+
+#captcha_info > p {
+    font-weight: bold;
+}
+
+#input_captcha {
+    margin-right: 1rem;
+    height: 40px;
+    width: 40px;
+    border: 4px solid #d3d3d3;
+
+}
+
+#captcha__container > img {
+    height: 60px;
+    weight: 15px;
+}
+
+/* more info */
+
+#more_info {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    weight: 90%;
+    margin-top: 3.3rem;
+}
+
+#button-register {
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+#button-register > button {
+    background-color: #31db61;
+    border: #31db61;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 80px;
+    padding: 1rem 5rem;
+
+}
+
+#button-register > button:hover {
+    background-color: #33e465;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+#login {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+}
