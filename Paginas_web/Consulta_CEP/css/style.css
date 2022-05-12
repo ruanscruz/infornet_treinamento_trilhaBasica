@@ -1,0 +1,117 @@
+/* general */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* background image */
+
+#background-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1
+;
+}
+
+/* main */
+
+h1 {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 0;
+}
+
+h1 > img {
+    margin-bottom: 1rem;
+    width: 300px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2rem 3rem 3rem 3rem;
+    background: -webkit-linear-gradient(top, #bdc3c7, #2c3e50);
+    border-radius: 10px;
+}
+
+
+/* form */
+
+#form-container {
+    border: 1px solid #fff;
+    padding: 2rem;
+    background: #2c3e50;
+}
+
+.cep-container > label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    color: #fff;
+}
+
+.inputs-form {
+    border: 2px solid #004e92;
+    padding: 1rem;
+    font-weight: bold;
+    appearance: textfield;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 2px solid #fff;
+    background: #004e92;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/* address container */
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    color: #fff;
+}
+
+.address-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.address-input-container > p {
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+span {
+    padding-top: 0.7rem;
+    color: #fff;
+}
