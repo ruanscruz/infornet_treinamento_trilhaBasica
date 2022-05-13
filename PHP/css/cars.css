@@ -1,0 +1,10 @@
+#cpf-beneficiary {
+    padding-left: 3.3rem;
+    max-width: 92%;
+}
+#lupa {
+    position: absolute;
+    height: 30px;
+    padding: 0.5rem;
+    background: #3D3D3D;
+}

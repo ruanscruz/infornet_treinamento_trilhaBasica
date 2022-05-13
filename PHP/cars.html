@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="./assets/icon-title.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/cars.css">
+  <title>Veículos | Cadastro</title>
+</head>
+<body>
+<div id="container">
+  <a id="house" href="index.html"><img id="house-img" src="./assets/house.svg" alt=""></a>
+  <div id="background-container">
+    <img src="./assets/background.png" alt="">
+  </div>
+  <div id="form">
+    <div id="form-titles__container">
+      <h1>Cadastro de Veículos</h1>
+      <h3>Informe os dados do veículo a ser assegurado</h3>
+    </div>
+    <form id="register-container" action="">
+      <div class="registers-input__container">
+        <img id="lupa" src="./assets/lupa.svg" alt="">
+        <input data-type="cpf-beneficiary" type="text" class="input-registers" id="cpf-beneficiary" placeholder="Informe o CPF do beneficiário">
+        <span data-error="cpf-beneficiary" class="erros-registers"></span>
+      </div>
+      <div class="registers-input__container">
+        <input data-type="beneficiary" type="text" class="input-registers" id="beneficiary" placeholder="Nome do beneficiário">
+        <span data-error="beneficiary" class="erros-registers"></span>
+      </div>
+      <div class="diviser"></div>
+      <div class="cars-input__container">
+        <div class="registers-input__container">
+            <input data-type="automaker" type="text" class="input-registers" id="automaker" placeholder="Montadora">
+            <span data-error="automaker" class="erros-registers"></span>
+        </div>
+
+        <div class="registers-input__container">
+          <input data-type="model" type="text" class="input-registers" id="model" placeholder="Modelo">
+          <span data-error="model" class="erros-registers"></span>
+        </div>
+
+        <div class="registers-input__container">
+          <input data-type="year-manufacturing" type="text" class="input-registers" id="year-manufacturing" placeholder="Ano de fabricação">
+          <span data-error="year-manufacturing" class="erros-registers"></span>
+        </div>
+
+        <div class="registers-input__container">
+          <input data-type="year-model" type="text" class="input-registers" id="year-model" placeholder="Ano do modelo">
+          <span data-error="year-model" class="erros-registers"></span>
+        </div>
+
+        <div class="registers-input__container">
+          <input data-type="plate" type="text" class="input-registers" id="plate" placeholder="Placa">
+          <span data-error="plate" class="erros-registers"></span>
+        </div>
+
+        <div class="registers-input__container">
+          <input data-type="chassi" type="text" class="input-registers" id="chassi" placeholder="Número do chassi">
+          <span data-error="chassi" class="erros-registers"></span>
+        </div>
+      </div>
+
+      <div class="diviser"></div>
+
+      <div id="button-container">
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
