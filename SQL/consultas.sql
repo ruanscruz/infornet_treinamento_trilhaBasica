@@ -29,5 +29,17 @@ INNER JOIN beneficiarios b ON b.id = v.`id_beneficiario`
 SET v.situacao = 'I' WHERE b.`situacao` = 'I';
 
 /* QUESTAO F */
+DELETE b FROM beneficiarios b
+LEFT JOIN veiculos v ON v.`id_beneficiario` = b.`id`
+WHERE v.`id_beneficiario` IS NULL;
+
 /* QUESTAO G */
+UPDATE beneficiarios b
+INNER JOIN veiculos v ON v.`id_beneficiario` = b.`id`
+SET b.`situacao` = 'I', v.`situacao` = 'I'
+WHERE b.`cidade` = 'Belo Horizonte';
+
 /* QUESTAO H */
+SELECT b.uf, COUNT(b.uf) FROM beneficiarios b
+RIGHT JOIN veiculos v ON v.`id_beneficiario` = b.`id`
+GROUP BY b.uf;
