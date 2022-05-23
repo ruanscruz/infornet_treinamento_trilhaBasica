@@ -3,8 +3,10 @@ class Validations {
     validity(inputForm) {
         const inputType = inputForm.dataset.type
         const spanError = document.querySelector(`[data-error=${inputType}]`)
-
-        //if(this._validators[inputType]) this._validators[inputType](inputForm)
+        console.log(inputType)
+        if(inputType === 'zipCode') {
+            this._zipCodeValidity(inputForm)
+        }
         if(!inputForm.validity.valid){
             inputForm.classList.add('error-input')
             spanError.classList.remove('display-none')
@@ -18,10 +20,38 @@ class Validations {
         }
     }
 
-    _validators = inputForm => {
-        return {
-            //cep: inputForm => cepNotFound(inputForm)
+    _zipCodeValidity = async (input) => {
+        const zipCode = input.value
+        console.log(zipCode)
+        const options = {
+            method: 'GET',
+            mode: 'cors',
+            headers: {'content-type': 'application/json;charset=utf-8'}
         }
+        const url = `https://viacep.com.br/ws/${zipCode}/json/`
+        const response = (await fetch(url, options)).json()
+        return response.then(data => {
+            if(data.error) {
+                input.setCustomValidity('CEP não encontrado')
+                return
+            } else {
+                input.setCustomValidity('')
+                return this._fillZipCode(data)
+            }
+        })
+    }
+
+    _fillZipCode = (address) => {
+        const { logradouro, bairro, localidade, uf } = address
+        const street = document.querySelector('[data-type="street"]')
+        const district = document.querySelector('[data-type="district"]')
+        const city = document.querySelector('[data-type="city"]')
+        const state = document.querySelector('[data-type="state"]')
+
+        street.value = logradouro
+        district.value = bairro
+        city.value = localidade
+        state.value = uf
     }
 
     _showErrorMessage = (inputForm, inputType) => {
@@ -47,10 +77,10 @@ class Validations {
                 valueMissing: 'Informe seu CPF!',
                 patternMismatch: 'CPF inválido!'
             },
-            cep: {
+            zipCode: {
                 valueMissing: 'Informe seu CEP!',
                 patternMismatch: 'CEP inválido!',
-                customError: 'CEP não encontrado1'
+                customError: 'CEP não encontrado!'
             },
             number: {
                 valueMissing: 'Insiro o número de endereço!'

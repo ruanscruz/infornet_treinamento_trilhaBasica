@@ -3,6 +3,10 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+h3 {
+    color: #7F7F7F;
+}
+
 
 #house {
     position: absolute;
@@ -18,7 +22,6 @@ body {
     display: none;
 }
 
-
 /* container */
 #container {
     width: 100%;
@@ -28,7 +31,7 @@ body {
 
 #background-container {
     width: 35%;
-    background: #08080B;
+    background-color: #000;
 }
 #background-container > img {
     width: 100%;
@@ -135,4 +138,10 @@ button:hover {
     font-weight: lighter;
     font-size: 0.8rem;
     padding-left: 0.5rem;
+}
+
+.subtitles {
+    font-size: 1.2rem;
+    color: #7F7F7F;
+    font-weight: 300;
 }
